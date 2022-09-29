@@ -1,8 +1,8 @@
-package com.antgut.aad.UT01.data
+package com.antgut.aad.UT01.ex01.data
 
 import android.app.Activity
 import android.content.Context
-import com.antgut.aad.UT01.domain.Customer
+import com.antgut.aad.UT01.ex01.domain.Customer
 
 class PreferenceLocalSource (private val activity: Activity) {
     val sharedPref = activity.getPreferences(
