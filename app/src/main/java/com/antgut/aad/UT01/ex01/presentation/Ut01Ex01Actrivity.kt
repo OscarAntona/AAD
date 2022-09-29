@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.antgut.aad.R
-import com.antgut.aad.UT01.data.PreferenceLocalSource
-import com.antgut.aad.UT01.data.SharedPreferenceLocalSource
-import com.antgut.aad.UT01.domain.Customer
+import com.antgut.aad.UT01.ex01.data.PreferenceLocalSource
+import com.antgut.aad.UT01.ex01.data.SharedPreferenceLocalSource
+import com.antgut.aad.UT01.ex01.domain.Customer
 
 
 class Ut01Ex01Activity : AppCompatActivity() {

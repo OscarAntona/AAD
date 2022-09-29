@@ -1,9 +1,8 @@
-package com.antgut.aad.UT01.data
+package com.antgut.aad.UT01.ex01.data
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import com.antgut.aad.R
-import com.antgut.aad.UT01.domain.Customer
+import com.antgut.aad.UT01.ex01.domain.Customer
 
 
 class SharedPreferenceLocalSource (val context: Context) {
@@ -29,7 +28,7 @@ class SharedPreferenceLocalSource (val context: Context) {
             apply()
         }*/
     }
-    fun getCustomer(): Customer{
+    fun getCustomer(): Customer {
         return Customer (
             sharedPref.getInt("id", 0),
             sharedPref.getString("name", "no existe")!!,
