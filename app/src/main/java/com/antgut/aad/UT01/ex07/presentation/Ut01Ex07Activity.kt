@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.TextView
 import com.antgut.aad.R
 import com.example.aad22.ut01.ex07.data.LocalDataSource
-import com.example.aad22.ut01.ex07.domain.Counter
+import com.example.aad22.ut01.ex07.domain.Contador
 
 
 class Ut01Ex07Activity : AppCompatActivity() {
@@ -22,7 +22,7 @@ class Ut01Ex07Activity : AppCompatActivity() {
         var mensaje = findViewById<TextView>(R.id.mensaje)
 
         if(localSource.getCounter(1) == null){
-            localSource.saveCounter(Counter(1,1))
+            localSource.saveCounter(Contador(1,1))
             var num = localSource.getCounter(1)?.contador.toString()
             contador.setText(num)
         }else{
@@ -31,7 +31,7 @@ class Ut01Ex07Activity : AppCompatActivity() {
                 if(counter.contador==2){
                     var num = localSource.getCounter(1)?.contador.toString()
                     contador.setText((num.toInt()+1).toString())
-                    mensaje.text = "\"La aplicacion se ha abierto ${num.toInt()+1} veces\""
+                    mensaje.text = "\"Se abrio ${num.toInt()+1} veces\""
                 }else{
                     counter.contador = counter.contador + 1
                     localSource.saveCounter(counter)
