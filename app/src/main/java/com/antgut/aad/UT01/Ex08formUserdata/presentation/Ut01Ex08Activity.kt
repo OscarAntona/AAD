@@ -29,7 +29,7 @@ class Ut01Ex08Activity: AppCompatActivity() {
 
         var users = usersRepository.getUsers()
         Log.d("@dev", "----------------------------------------------------------------------------")
-        Log.d("@dev", "Lista")
+        Log.d("@dev", "Lista ")
         showUsers(users)
         Log.d("@dev", "----------------------------------------------------------------------------")
         Log.d("@dev", "user con id 5")
